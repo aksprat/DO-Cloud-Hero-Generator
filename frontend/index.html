@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>DO AI Avatar Generator</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="logo">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/DigitalOcean_logo.svg" />
+    <span>DO AI Avatar</span>
+  </div>
+</header>
+
+
+<section class="hero">
+
+  <div class="hero-content">
+
+    <div class="badge">
+      ⚡ Powered by DigitalOcean Serverless Inference
+    </div>
+
+    <h1>
+      Become a <span>Cloud Superhero</span>
+    </h1>
+
+    <p>
+      Fill in your details, snap a selfie, and let AI generate your personalised
+      <b>DigitalOcean Cloud Hero Avatar</b>.
+    </p>
+
+  </div>
+
+</section>
+
+
+<section class="form-section">
+
+  <div class="form-card">
+
+    <h2>Your Details</h2>
+
+    <form id="heroForm">
+
+      <input name="name" placeholder="Full Name" required>
+      <input name="email" placeholder="Email Address" required>
+      <input name="company" placeholder="Company Name" required>
+      <input name="designation" placeholder="Designation" required>
+
+      <label class="upload-box">
+
+        <input type="file" name="file" accept="image/*">
+
+        <div class="upload-text">
+          📸 Upload your selfie
+        </div>
+
+      </label>
+
+      <button type="submit">
+        ✨ Generate My Superhero Avatar
+      </button>
+
+    </form>
+
+    <div id="loading"></div>
+    <div id="result"></div>
+
+  </div>
+
+</section>
+
+
+<section class="features">
+
+  <div class="feature">
+    🛡️ AI Generated
+  </div>
+
+  <div class="feature">
+    ⚡ Instant Results
+  </div>
+
+  <div class="feature">
+    ☁️ Cloud Powered
+  </div>
+
+</section>
+
+
+<footer>
+
+Built with ❤️ using  
+<b>DigitalOcean Serverless Inference</b>  
+at <b>CloudConf Bangalore</b>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

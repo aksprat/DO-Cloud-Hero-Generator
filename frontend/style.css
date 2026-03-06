@@ -1,0 +1,212 @@
+body {
+
+font-family: Inter, sans-serif;
+margin:0;
+background: radial-gradient(circle at top, #0b2a4a, #030d1a);
+color:white;
+
+}
+
+/* NAVBAR */
+
+.navbar{
+
+display:flex;
+align-items:center;
+padding:16px 40px;
+background:#02101f;
+border-bottom:1px solid rgba(255,255,255,0.1);
+
+}
+
+.logo{
+
+display:flex;
+align-items:center;
+gap:10px;
+font-weight:600;
+font-size:18px;
+
+}
+
+.logo img{
+
+height:28px;
+
+}
+
+/* HERO */
+
+.hero{
+
+text-align:center;
+padding:70px 20px;
+
+}
+
+.hero h1{
+
+font-size:48px;
+margin:20px 0;
+
+}
+
+.hero span{
+
+color:#1da1ff;
+
+}
+
+.hero p{
+
+max-width:600px;
+margin:auto;
+opacity:0.85;
+
+}
+
+/* BADGE */
+
+.badge{
+
+display:inline-block;
+background:rgba(0,140,255,0.2);
+border:1px solid rgba(0,140,255,0.5);
+padding:6px 14px;
+border-radius:30px;
+font-size:14px;
+
+}
+
+/* FORM */
+
+.form-section{
+
+display:flex;
+justify-content:center;
+margin-top:30px;
+
+}
+
+.form-card{
+
+background:rgba(255,255,255,0.04);
+border:1px solid rgba(255,255,255,0.08);
+backdrop-filter: blur(10px);
+
+padding:40px;
+border-radius:18px;
+width:420px;
+
+box-shadow:0 10px 40px rgba(0,0,0,0.6);
+
+}
+
+.form-card h2{
+
+margin-bottom:20px;
+
+}
+
+input{
+
+width:100%;
+padding:12px;
+margin-bottom:12px;
+
+border-radius:8px;
+border:1px solid rgba(255,255,255,0.2);
+background:#071524;
+color:white;
+
+}
+
+/* UPLOAD */
+
+.upload-box{
+
+display:block;
+border:2px dashed rgba(255,255,255,0.2);
+padding:25px;
+text-align:center;
+border-radius:10px;
+cursor:pointer;
+margin-bottom:16px;
+
+}
+
+.upload-box input{
+
+display:none;
+
+}
+
+/* BUTTON */
+
+button{
+
+width:100%;
+padding:14px;
+
+border:none;
+border-radius:10px;
+
+font-size:16px;
+font-weight:600;
+
+background:linear-gradient(90deg,#007bff,#00d4ff);
+
+color:white;
+cursor:pointer;
+
+transition:0.3s;
+
+}
+
+button:hover{
+
+transform:translateY(-2px);
+box-shadow:0 8px 20px rgba(0,150,255,0.5);
+
+}
+
+/* FEATURES */
+
+.features{
+
+display:flex;
+justify-content:center;
+gap:30px;
+margin-top:50px;
+
+}
+
+.feature{
+
+background:rgba(255,255,255,0.05);
+padding:16px 28px;
+border-radius:12px;
+font-size:16px;
+
+}
+
+/* FOOTER */
+
+footer{
+
+text-align:center;
+margin:50px 0;
+opacity:0.7;
+font-size:14px;
+
+}
+
+/* RESULT IMAGE */
+
+#result img{
+
+margin-top:20px;
+max-width:100%;
+border-radius:12px;
+
+}
