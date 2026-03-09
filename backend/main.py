@@ -30,10 +30,10 @@ async def create_avatar(
 
     save_lead(name, email, company, designation)
 
-    result = generate_avatar(name)
-
+    image_url = genrate_avatar(name)
+    
     return {
-        "image": result
+        "image": image_url
     }
 
 
