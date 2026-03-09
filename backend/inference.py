@@ -1,6 +1,7 @@
 import os
 import requests
 
+# Environment variables
 DO_AI_ENDPOINT = os.getenv("DO_AI_ENDPOINT")
 DO_AI_KEY = os.getenv("DO_AI_KEY")
 
@@ -43,7 +44,11 @@ CloudConf Bangalore
 
     payload = {
         "prompt": prompt,
-        "num_images": 1
+        "num_images": 1,
+
+        # Optimized for FLUX Schnell speed
+        "num_inference_steps": 4,
+        "guidance_scale": 3.5
     }
 
     headers = {
@@ -57,4 +62,11 @@ CloudConf Bangalore
         json=payload
     )
 
-    return response.json()
+    response.raise_for_status()
+
+    result = response.json()
+
+    # Extract the generated image URL
+    image_url = result["images"][0]["url"]
+
+    return image_url
