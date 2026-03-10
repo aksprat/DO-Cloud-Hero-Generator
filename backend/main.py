@@ -4,8 +4,8 @@ import shutil
 import uuid
 import os
 
-from inference import generate_avatar
-from lead_storage import save_lead
+from backend.inference import generate_avatar
+from backend.lead_storage import save_lead
 
 app = FastAPI()
 
